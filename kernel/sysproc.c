@@ -7,16 +7,19 @@
 #include "sysfunc.h"
 
 int counter = 0;
+int counterB =0;
 
 int
 sys_fork(void)
 {
+  counterB++;
   return fork();
 }
 
 int
 sys_exit(void)
 {
+  counterB++;
   exit();
   return 0;  // not reached
 }
@@ -24,12 +27,14 @@ sys_exit(void)
 int
 sys_wait(void)
 {
+  counterB++;
   return wait();
 }
 
 int
 sys_kill(void)
 {
+  counterB++;
   int pid;
 
   if(argint(0, &pid) < 0)
@@ -40,6 +45,7 @@ sys_kill(void)
 int
 sys_getpid(void)
 {
+  counterB++;
   counter++;
   return proc->pid;
 }
@@ -47,12 +53,21 @@ sys_getpid(void)
 int
 sys_partACount(void)
 {
+  counterB++;
   return counter;
+}
+
+int
+sys_partBCount(void)
+{
+  counterB++;
+  return counterB;
 }
 
 int
 sys_sbrk(void)
 {
+  counterB++;
   int addr;
   int n;
 
@@ -67,6 +82,7 @@ sys_sbrk(void)
 int
 sys_sleep(void)
 {
+  counterB++;
   int n;
   uint ticks0;
   
@@ -90,6 +106,7 @@ sys_sleep(void)
 int
 sys_uptime(void)
 {
+  counterB++;
   uint xticks;
   
   acquire(&tickslock);

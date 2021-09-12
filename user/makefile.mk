@@ -18,6 +18,7 @@ USER_PROGS := \
 	wc\
 	callgetpid\
 	getCounterNum\
+	getCounterB\
 	zombie
 
 USER_PROGS := $(addprefix user/, $(USER_PROGS))
