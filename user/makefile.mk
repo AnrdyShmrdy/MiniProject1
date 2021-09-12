@@ -16,6 +16,8 @@ USER_PROGS := \
 	tester\
 	usertests\
 	wc\
+	callgetpid\
+	getCounterNum\
 	zombie
 
 USER_PROGS := $(addprefix user/, $(USER_PROGS))
