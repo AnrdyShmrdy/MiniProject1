@@ -23,7 +23,7 @@ int sys_unlink(void);
 int sys_wait(void);
 int sys_write(void);
 int sys_uptime(void);
-int sys_partACount(void);
-int sys_partBCount(void);
+int sys_partACount(void); // add function prototype for partA
+int sys_partBCount(void); // add function prototype for partB
 
 #endif // _SYSFUNC_H_
