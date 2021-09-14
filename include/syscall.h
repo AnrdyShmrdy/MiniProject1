@@ -23,6 +23,6 @@
 #define SYS_sbrk   19
 #define SYS_sleep  20
 #define SYS_uptime 21
-#define SYS_partACount 22
-#define SYS_partBCount 23
+#define SYS_partACount 22 //Add system call number for part A
+#define SYS_partBCount 23 //Add system call number for part B
 #endif // _SYSCALL_H_
