@@ -6,8 +6,8 @@
 #include "proc.h"
 #include "sysfunc.h"
 
-int counter = 0;
-int counterB =0;
+int counter = 0; // Increments after getPID
+int counterB =0; //Increments after every system call
 
 int
 sys_fork(void)
