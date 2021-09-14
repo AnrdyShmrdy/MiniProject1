@@ -25,8 +25,8 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
-int partACount(void);
-int partBCount(void);
+int partACount(void); // define function prototype for partACount
+int partBCount(void); // define function prototype for partBCount
 // user library functions (ulib.c)
 int stat(char*, struct stat*);
 char* strcpy(char*, char*);
