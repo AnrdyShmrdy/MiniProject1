@@ -1,5 +1,6 @@
 
 # user programs
+# added getCounterNum, and getCounterB
 USER_PROGS := \
 	cat\
 	echo\
@@ -17,8 +18,8 @@ USER_PROGS := \
 	usertests\
 	wc\
 	callgetpid\
-	getCounterNum\ // defines user command for getCounterNum
-	getCounterB\  // defines user command for getCounterB
+	getCounterNum\
+	getCounterB\
 	zombie
 
 USER_PROGS := $(addprefix user/, $(USER_PROGS))
