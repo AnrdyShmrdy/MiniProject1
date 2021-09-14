@@ -29,5 +29,5 @@ SYSCALL(getpid)
 SYSCALL(sbrk)
 SYSCALL(sleep)
 SYSCALL(uptime)
-SYSCALL(partACount)
-SYSCALL(partBCount)
+SYSCALL(partACount) //add system call for partACount
+SYSCALL(partBCount) //add system call for partBCount
