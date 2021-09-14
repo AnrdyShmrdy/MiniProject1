@@ -103,8 +103,8 @@ static int (*syscalls[])(void) = {
 [SYS_wait]    sys_wait,
 [SYS_write]   sys_write,
 [SYS_uptime]  sys_uptime,
-[SYS_partACount] sys_partACount,
-[SYS_partBCount] sys_partBCount,
+[SYS_partACount] sys_partACount, // adds system call pointer for part A
+[SYS_partBCount] sys_partBCount, // adds system call pointer for part B
 };
 
 // Called on a syscall trap. Checks that the syscall number (passed via eax)
