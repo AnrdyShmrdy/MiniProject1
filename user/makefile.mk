@@ -17,8 +17,8 @@ USER_PROGS := \
 	usertests\
 	wc\
 	callgetpid\
-	getCounterNum\
-	getCounterB\
+	getCounterNum\ // defines user command for getCounterNum
+	getCounterB\  // defines user command for getCounterB
 	zombie
 
 USER_PROGS := $(addprefix user/, $(USER_PROGS))
